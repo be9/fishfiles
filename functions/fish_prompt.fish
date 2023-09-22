@@ -76,6 +76,8 @@ function fish_prompt --description 'Write out the prompt'
             set suffix '$'
     end
 
+    iterm2_prompt_mark
+
     # PWD
     set_color $color_cwd
     echo -n (prompt_pwd)
