@@ -1,2 +1,4 @@
-pyenv init - | source
-pyenv virtualenv-init - | source
+if type -q pyenv
+    pyenv init - | source
+    pyenv virtualenv-init - | source
+end
