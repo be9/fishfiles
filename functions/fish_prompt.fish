@@ -78,6 +78,10 @@ function fish_prompt --description 'Write out the prompt'
 
     iterm2_prompt_mark
 
+    if set -q CODER_WORKSPACE_NAME
+        echo -n "[$CODER_WORKSPACE_NAME] "
+    end
+
     # PWD
     set_color $color_cwd
     echo -n (prompt_pwd)
